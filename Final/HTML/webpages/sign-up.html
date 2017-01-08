@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="../images/icon.jpg">
+		
+		<title>Registration | Online Venue Reservation System</title>
+			
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/sb-admin-2.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="page-wrapper" style="margin:50px 0px 50px 0px;">
+				<form class="form-horizontal"><br>
+					<h2>Registration Form</h2>
+					<fieldset>
+						<legend>Account Details</legend>
+						<div class="form-group col-lg-12">
+							<label for="inputUserID" class="col-lg-4 control-label" required>User ID</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" id="inputUserID" placeholder="User ID">
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputPassword1" class="col-lg-4 control-label" required>Password</label>
+							<div class="col-lg-8">
+								<input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputPassword2" class="col-lg-4 control-label" required>Confirm Password</label>
+							<div class="col-lg-8">
+								<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputUserGender" class="col-lg-4 control-label">User Type</label>
+							<div class="col-lg-8 radio">
+								<label>
+									<input type="radio" name="inputUserType" id="inputUserType_1" value="option1" required>Client
+								</label>
+								<label>
+									<input type="radio" name="inputUserType" id="inputUserType_2" value="option2">Administrator
+								</label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Personal Information</legend>
+						<div class="form-group col-lg-12">
+							<label for="inputUserFName" class="col-lg-4 control-label">First Name</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" id="inputUserFName" placeholder="First Name" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputUserMName" class="col-lg-4 control-label">Middle Name</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" id="inputUserMName" placeholder="Middle Name" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputUserLName" class="col-lg-4 control-label">Last Name</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" id="inputUserLName" placeholder="Last Name" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputUsermail" class="col-lg-4 control-label">E-mail Address</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" id="inputUserEmail" placeholder="E-mail Address" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputUserContact" class="col-lg-4 control-label">Contact Number</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" id="inputUserContact" pattern="[0][0-9]{10}" placeholder="Cellphone Number (09XXXXXXXXX)" required>
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<label for="inputUserAddress" class="col-lg-4 control-label">Address</label>
+							<div class="col-lg-8">
+								<textarea name="address" class="form-control" rows="3" id="inputUserAddress" required></textarea>
+							</div>
+						</div>
+						<div class="form-group col-lg-12">
+							<div class="col-lg-8 col-lg-offset-4">
+							<div class="checkbox">
+								<label>
+								<input type="checkbox" required> I have agreed and understood the terms and conditions of this Venue Reservation System.
+								</label>
+							</div><br>
+							<button type="submit" class="btn btn-primary">Submit</button>
+							<button class="btn btn-default">Cancel</button>
+							</div>
+						</div>
+					</fieldset><br><br>
+				</form>
+			</div>
+		</div>
+	</body>
+	
+</html>

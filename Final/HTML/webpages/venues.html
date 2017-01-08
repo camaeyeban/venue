@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../images/icon.jpg">
+
+		<title>Venues | Online Venue Reservation System</title>
+
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<script src="../js/ie-emulation-modes-warning.js"></script>
+		<link href="../css/home-format.css" rel="stylesheet">
+		<link href="../css/venues-format.css" rel="stylesheet">
+    <link href="../css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	</head>
+	<!-- NAVBAR
+	================================================== -->
+
+	<body>
+		<div class="navbar-wrapper">
+			<div class="container">
+
+				<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<img src="../images/logo.png" class="logo-venue">
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="home.html">Home</a></li>
+								<li class="active"><a href="venues.html">Venues</a></li>
+								<li><a href="events.html">Events</a></li>
+								<li><a href="reservation.html">Reservations</a></li>
+								<li><a href="about-us.html">About</a></li>
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="sign-up.html">Sign up</a></li>
+								<li><a href="#" data-toggle="collapse" data-target="#login">Log-in</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div id="login" class="panel panel-default panel-login collapse">
+					<div class="panel-body">
+						<form class="form-signin" role="form">
+							<h4 class="form-signin-heading">Sign in to Venue Reservation System</h4><br>
+							<input type="email" class="form-control" placeholder="Email address" required autofocus><br>
+							<input type="password" class="form-control" placeholder="Password" required>
+							<div class="checkbox">
+								<label>
+								<input type="checkbox" value="remember-me"> Remember me
+								</label>
+							</div><br>
+							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container">
+			<div id="page-wrapper" style="margin:50px 0px 0px 0px;">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="page-header">Venues</h1>
+					</div>
+					<!-- /.col-lg-12 -->
+				</div>
+				<!-- /.row -->
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#viewProd" aria-controls="viewProd" role="tab" data-toggle="tab">VIEW</a></li>
+							<li role="presentation"><a href="#searchProd" aria-controls="searchProd" role="tab" data-toggle="tab">SEARCH</a></li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							
+							
+							<div role="tabpanel" class="tab-pane active" id="viewProd">
+								<div class="row">
+									<div class="container marketing venue-list col-lg-12">
+										<!-- Three columns of text below the carousel -->
+										<div class="row">
+											<div class="modal fade" id="detailsModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+															<span class="modal-title" id="myModalLabel">The Pergola</span>
+														</div>
+														<div class="modal-body">
+															<table>
+																<tr>
+																	<img src="../images/the-pergola.jpg" class="pop-up-venue-image" alt="Generic placeholder thumbnail"><br>
+																</tr><br>
+																<tr><td><span class="bold-title">Venue ID: </span></td><td> 001 </td></tr>
+																<tr><td><span class="bold-title">Location: </span></td>
+																	<td>Boom Compound, CCP Complex</td> </tr>
+																	<tr><td></td><td>Sen. Gil J. Puyat Avenue cor. Roxas Boulevard</td> </tr>
+																	<tr><td></td><td>Pasay City, Metro Manila, Philippines</td> </tr>
+																<tr><td><span class="bold-title">Type: </span></td><td> Birthday Party </td></tr>
+																<tr><td><span class="bold-title">Maximum Capacity: </span> </td><td> 220 </td></tr>
+																<tr><td><span class="bold-title">Rate: </span></td><td> Php147,000.00 for 150 guests (goes up if a guest is added) </td></tr>
+															</table>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+															<a href="reservation.html"><button type="submit" class="btn btn-primary">Reserve</button></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal fade" id="detailsModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+															<span class="modal-title" id="myModalLabel">Grandview</span>
+														</div>
+														<div class="modal-body">
+															<table>
+																<tr>
+																	<img src="../images/grandview.jpg" class="pop-up-venue-image" alt="Generic placeholder thumbnail"><br>
+																</tr><br>
+																<tr><td><span class="bold-title">Venue ID: </span></td><td> 002 </td></tr>
+																<tr><td><span class="bold-title">Location: </span>
+																	</td><td>Grandview Events Place | 3rd Floor, </td></tr>
+																	<tr><td></td><td>1012 Buma Bldg. Metropolitan Avenue, </td></tr>
+																	<tr><td></td><td>Makati City, Philippines </td></tr>
+																<tr><td><span class="bold-title">Type: </span></td><td> Wedding </td></tr>
+																<tr><td><span class="bold-title">Maximum Capacity: </span></td><td> 400 </td></tr>
+																<tr><td><span class="bold-title">Rate: </span></td><td>  Php165,000 for 150 guest (goes up if a guest is added) </td></tr>
+															</table>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+															<a href="reservation.html"><button type="submit" class="btn btn-primary">Reserve</button></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal fade" id="detailsModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+															<span class="modal-title" id="myModalLabel">Jardin de Miramar</span>
+														</div>
+														<div class="modal-body">
+															<table>
+																<tr>
+																	<img src="../images/jardin-de-miramar.jpg" class="pop-up-venue-image" alt="Generic placeholder thumbnail"><br>
+																</tr><br>
+																<tr><td><label class="desc"><span class="bold-title">Venue ID: </span></td><td> 003 </label> </td></tr>
+																	<tr><td><span class="bold-title">Location: </span> </td>
+																	<td>276 San Jose Ext., </td></tr>
+																<tr><td></td><td>San Isidro Antipolo City, Philippines </td></tr>
+																<tr><td><span class="bold-title">Type: </span></td><td> Wedding </td></tr>
+																<tr><td><span class="bold-title">Maximum Capacity: </span></td><td> 220 </td></tr>
+																<tr><td><span class="bold-title">Rate: </span></td><td>  Php12,650.00 for 30 guests (goes up if a guest is added) </td></tr>
+															</table>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+															<a href="reservation.html"><button type="submit" class="btn btn-primary">Reserve</button></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<img class="img" src="../images/the-pergola.jpg" alt="Generic placeholder image" style="width: 300px; height: 160px;">
+												<h2>The Pergola</h2>
+												<p>This one-of-a-kind octagon-shaped air-conditioned reception hall features wide wood-framed glass windows overlooking lush tropical gardens, a fish pond with waterfalls, a tent-covered terrace and a garden trellis.</p>
+												<p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#detailsModal1">View Details</a></p>
+											</div><!-- /.col-lg-4 -->
+											<div class="col-lg-4">
+												<img class="img" src="../images/grandview.jpg" alt="Generic placeholder image" style="width: 300px; height: 160px;">
+												<h2>Grandview</h2>
+												<p>Grandview Events Place is thought to bring a modern Korean style events place in the Philippines. It is inspired with elegant and captivating event halls, styled with posh features and amenities that suit every client.</p>
+												<p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#detailsModal2">View Details</a></p>
+											</div><!-- /.col-lg-4 -->
+											<div class="col-lg-4">
+												<img class="img" src="../images/jardin-de-miramar.jpg" alt="Generic placeholder image" style="width: 300px; height: 160px;">
+												<h2>Jardin de Miramar</h2>
+												<p>Divided into different themed areas, Jardin de Miramar—as the place is called—hosts parties, receptions and other functions in its lush multi-level gardens landscaped by Tony Leano with stately royal palms and serenity waterfalls.</p>
+												<p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#detailsModal3">View Details</a></p>
+											</div><!-- /.col-lg-4 -->
+										</div><!-- /.row -->
+									</div>
+								</div>
+							</div>
+
+							
+							<div role="tabpanel" class="tab-pane" id="searchProd">
+								<h2>Venue Details</h2>
+								<div class="row">
+									<!-- Tab panel -->
+									<div class="col-lg-12">
+
+										<!-- Details Modal -->
+										<div class="modal fade" id="dm1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+														<h4 class="modal-title" id="myModalLabel">Events in Pergola</h4>
+													</div>
+													<div class="modal-body">
+														<table class="table table-hover">
+															<thead>
+																<tr>
+																	<th>No.</th>
+																	<th>Reservation ID</th>
+																	<th>Reservation Name</th>
+																	<th>Reservation Date</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>2</td>
+																	<td>Angel's Debut</td>
+																	<td>December 15, 2014</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal fade" id="dm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+														<h4 class="modal-title" id="myModalLabel">Events in Grandview</h4>
+													</div>
+													<div class="modal-body">
+														<table class="table table-hover">
+															<thead>
+																<tr>
+																	<th>No.</th>
+																	<th>Reservation ID</th>
+																	<th>Reservation Name</th>
+																	<th>Reservation Date</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>3</td>
+																	<td>Wedding of Jack and Jill</td>
+																	<td>December 25, 2014</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal fade" id="dm3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+														<h4 class="modal-title" id="myModalLabel">Events in Jardin de Miramar</h4>
+													</div>
+													<div class="modal-body">
+														<table class="table table-hover">
+															<thead>
+																<tr>
+																	<th>No.</th>
+																	<th>Reservation ID</th>
+																	<th>Reservation Name</th>
+																	<th>Reservation Date</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>1</td>
+																	<td>CMSC 127 S-1L Sem Ender</td>
+																	<td>December 6, 2014</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+										<!-- Details Modal -->
+										<div class="panel-body col-lg-12">
+											<div class="table-responsive col-lg-12">
+												<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th>Name</th>
+															<th>Type</th>
+															<th>Location</th>
+															<th>Maximum Capacity</th>
+															<th>Rate</th>
+															<th>Number of Events</th>
+															<th>Availability</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>The Pergola</td>
+															<td>Birthday Party</td>
+															<td>Boom Compound, CCP Complex<br>
+																Sen. Gil J. Puyat Avenue cor. Roxas Boulevard<br>
+																Pasay City, Metro Manila, Philippines</td>
+															<td>220</td>
+															<td>Php147000.00</td>
+															<td>1</td>
+															<td>
+																<button type="button" class="btn btn-xs btn-info" data-toggle="modal" data-target="#dm1">View Reservations</button>
+															</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>Grandview</td>
+															<td>Wedding</td>
+															<td>Grandview Events Place | 3rd Floor, <br>
+																1012 Buma Bldg. Metropolitan Avenue,<br>
+																Makati City, Philippines</td>
+															<td>400</td>
+															<td>Php165000.00</td>
+															<td>1</td>
+															<td>
+																<button type="button" class="btn btn-xs btn-info" data-toggle="modal" data-target="#dm2">View Reservations</button>
+															</td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>Jardin de Miramar</td>
+															<td>Outing</td>
+															<td>276 San Jose Ext., <br>
+																San Isidro Antipolo City, Philippines</td>
+															<td>220</td>
+															<td>Php12650.00</td>
+															<td>1</td>
+															<td>
+																<button type="button" class="btn btn-xs btn-info" data-toggle="modal" data-target="#dm3">View Reservations</button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div> 
+									<!-- Row -->      
+								</div> 
+							</div>
+						
+					
+						</div>
+					</div>
+                </div>
+				<hr>
+
+				<footer>
+					<p class="pull-right"><a href="#">Back to top</a></p>
+					<p>&copy; 2014 Site maintained by UPLB's CMSC 127 Group A members.  <b>&middot;</b> <a href="terms-and-conditions.pdf">Terms and Conditions</a></p><br>
+				</footer>
+            </div>
+            <!-- tab panel -->
+
+
+        </div> <!-- Row -->   
+
+				
+		
+		
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		
+    <script src="../js/jquery.js"></script>
+	<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/docs.min.js"></script>
+		
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="../js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/sb-admin-2.js"></script>
+
+	<script src="../js/ie10-viewport-bug-workaround.js"></script>
+	<script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
+	</body>
+</html>

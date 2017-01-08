@@ -1,0 +1,32 @@
+.contact-us-table{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+table{
+	width: 100%
+}
+
+.col1{
+	width: 60%;
+}
+
+.contact-us-form-header{
+	color: #e41b17;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#contact{
+	padding: 10px 80px 20px 10px;
+}
+
+.contact-us-button{
+	width: 100px !important;
+}
+
+.contact-us-subheader{
+	color: #e41b17;
+	font-size: 20px;
+	font-weight: bold;
+}
